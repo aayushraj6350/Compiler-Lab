@@ -1,0 +1,12 @@
+#1.  write a python program to identify weather a given line is a comment or not 
+
+def is_comment(line):
+    stripped_line = line.strip()
+    
+    if stripped_line.startswith("#"):
+        return True
+        
+    if stripped_line.startswith(("'''", '"""')):
+        return True
+    
+    return False
