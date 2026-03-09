@@ -1,0 +1,20 @@
+# Write a python program to recognize strings under 'a','a*b+','abb'.
+
+import re
+
+def check_string(s):
+    if re.fullmatch(r'a', s):
+        print("String belongs to pattern: 'a'")
+    
+    elif re.fullmatch(r'a*b+', s):
+        print("String belongs to pattern: 'a*b+'")
+    
+    elif re.fullmatch(r'abb', s):
+        print("String belongs to pattern: 'abb'")
+    
+    else:
+        print("String does not match any pattern")
+
+string = input("Enter a string: ")
+check_string(string)
+print("Try programiz.pro")
