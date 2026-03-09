@@ -1,0 +1,9 @@
+# Write a python program to test whether a given identifier is valid or not.
+
+import keyword
+
+identifier = input("Enter an identifier: ")
+if identifier.isidentifier() and not keyword.iskeyword(identifier):
+    print("Valid Identifier")
+else:
+    print("Invalid Identifier")
