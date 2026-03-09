@@ -1,0 +1,15 @@
+# Write a python program to simulate lexical analyzer for validating operators.
+
+operators = ['+', '-', '*', '/', '%', '=', '==', '!=', '>', '<', '>=', '<=']
+
+expr = input("Enter an expression: ")
+
+tokens = expr.split()
+
+print("\nChecking operators:\n")
+
+for token in tokens:
+    if token in operators:
+        print(token, "is a Valid Operator")
+    else:
+        print(token, "is Not an Operator")
