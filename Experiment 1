@@ -8,5 +8,7 @@ def is_comment(line):
         
     if stripped_line.startswith(("'''", '"""')):
         return True
-    
+
+
+
     return False
